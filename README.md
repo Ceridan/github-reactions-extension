@@ -4,7 +4,6 @@ GitHub Reactions is a Google Chrome extension that allows you to extract reactio
 
 Currently, it shows thumbs up (+1) and thumbs down (-1) votes directly in the list of issues. You may sort issues by one of these reactions and choose which issue is the most important for your users.
 
-
 Here is an example from <https://github.com/deordie/deordie-digest/issues>:
 
 ![image](https://user-images.githubusercontent.com/408149/116781318-c3ac7480-aa8a-11eb-9683-56a976e9eedd.png)
