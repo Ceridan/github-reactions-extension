@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+  "name": "GitHub Reactions",
+  "version": "{{PACKAGE_VERSION}}",
+  "description": "Add reactions prefix before issue titles",
+  "content_scripts": [{
+    "matches": [
+      "https://github.com/*/*/issues",
+      "https://github.com/*/*/issues?*"
+    ],
+    "js": ["js/content.js"],
+    "run_at": "document_end"
+  }],
+  "background": {
+    "scripts": ["js/background.js"],
+    "persistent": true
+  },
+  "permissions": [
+    "activeTab",
+    "webNavigation",
+    "https://api.github.com/*"
+  ]
+}

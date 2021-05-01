@@ -1,0 +1,41 @@
+{
+  "name": "github-reaction-extension",
+  "version": "0.0.1",
+  "description": "Add reactions prefix before issue titles",
+  "scripts": {
+    "build": "webpack --mode production",
+    "dev": "webpack --mode development --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ceridan/databricks-tweak-extension.git"
+  },
+  "keywords": [
+    "GitHub",
+    "Reactions",
+    "Emoji",
+    "Chrome Extension",
+    "Web Extension"
+  ],
+  "author": {
+    "name": "Mikhail Kumachev",
+    "email": "mikhail.kumachev@gmail.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Ceridan/github-reactions-extension/issues"
+  },
+  "homepage": "https://github.com/Ceridan/github-reactions-extension#readme",
+  "devDependencies": {
+    "@types/chrome": "^0.0.135",
+    "clean-webpack-plugin": "^4.0.0-alpha.0",
+    "copy-webpack-plugin": "^8.1.1",
+    "eslint": "^7.25.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-loader": "^4.0.2",
+    "eslint-plugin-import": "^2.22.1",
+    "webpack": "^5.36.1",
+    "webpack-cli": "^4.6.0",
+    "zip-webpack-plugin": "^4.0.1"
+  }
+}
