@@ -1,6 +1,6 @@
 # GitHub Reactions
 
-GitHub Reactions is a Google Chrome extension that allows you to extract reactions from issues to better understand the most popular issues.
+GitHub Reactions is a Google Chrome extension that allows you to extract reactions from issues to better understand which issues are the most popular.
 
 Currently, it shows thumbs up (+1) and thumbs down (-1) votes directly in the list of issues. You may sort issues by one of these reactions and choose which issue is the most important for your users.
 
