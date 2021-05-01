@@ -48,7 +48,6 @@ function processIssues() {
         const agg = aggregateReactions(reactions)
         issueElement.innerHTML = `[${ReactionElements.thumbUp}: ${agg.thumbUp}, ${ReactionElements.thumbDown}: ${agg.thumbDown}] ${issueElement.innerHTML}`
       })
-      // eslint-disable-next-line no-console
       .catch((err) => console.log(`Error occurs in the GitHub Reactions Extension - ${err}`))
   })
 }

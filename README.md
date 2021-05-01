@@ -8,7 +8,9 @@ Here is an example from <https://github.com/deordie/deordie-digest/issues>:
 
 ![image](https://user-images.githubusercontent.com/408149/116781318-c3ac7480-aa8a-11eb-9683-56a976e9eedd.png)
 
-> Important notice. This extension is using [GitHub API](https://docs.github.com/en/rest/reference/reactions) to get reactions for each issue. GitHub API has [rate limits](https://docs.github.com/en/rest/overview/resources-in-the-rest-api#rate-limiting). This means how much requests we can send to GitHub API by hour. Currently extension supports only unauthorized requests.
+> Important notice. This extension is using [GitHub API](https://docs.github.com/en/rest/reference/reactions) to get reactions for each issue. GitHub API has [rate limits](https://docs.github.com/en/rest/overview/resources-in-the-rest-api#rate-limiting). This means how much requests we can send to GitHub API by hour.  
+>
+> __The extension supports only unauthorized requests at the moment__.
 
 ## How to build an extension
 

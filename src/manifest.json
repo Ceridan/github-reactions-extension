@@ -1,5 +1,5 @@
 {
-  "manifest_version": 2,
+  "manifest_version": 3,
   "name": "GitHub Reactions",
   "version": "{{PACKAGE_VERSION}}",
   "description": "Add reactions prefix before issue titles",
@@ -12,12 +12,13 @@
     "run_at": "document_end"
   }],
   "background": {
-    "scripts": ["js/background.js"],
-    "persistent": true
+    "service_worker": "background.js"
   },
   "permissions": [
     "activeTab",
-    "webNavigation",
+    "webNavigation"
+  ],
+  "host_permissions": [
     "https://api.github.com/*"
   ]
 }

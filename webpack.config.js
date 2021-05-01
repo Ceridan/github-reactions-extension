@@ -12,7 +12,7 @@ const config = {
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'js/[name].js',
+    filename: (pathData) => (pathData.chunk.name === 'background' ? '[name].js' : 'js/[name].js'),
   },
   context: __dirname,
   module: {
