@@ -40,7 +40,7 @@ export default function processIssueReactions() {
 
   const issueElements = document.querySelectorAll('a[data-hovercard-type="issue"]')
   issueElements.forEach((issueElement) => {
-    const issueUrl = `https://api.github.com/repos${issueElement.pathname}/reactions`
+    const issueUrl = `https://api.github.com/repos${issueElement.pathname}/reactions?per_page=100`
     cache.getOrRequest(issueUrl)
       .then((reactions) => {
         const agg = aggregateReactions(reactions)
