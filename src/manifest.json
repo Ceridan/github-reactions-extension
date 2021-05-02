@@ -7,19 +7,13 @@
   "background": {
     "service_worker": "background.js"
   },
-  "content_scripts": [{
-    "matches": [
-      "https://github.com/*/*/issues",
-      "https://github.com/*/*/issues?*"
-    ],
-    "js": ["js/content.js"],
-    "run_at": "document_end"
-  }],
   "permissions": [
     "activeTab",
+    "scripting",
     "webNavigation"
   ],
   "host_permissions": [
+    "https://github.com/*",
     "https://api.github.com/*"
   ]
 }

@@ -8,7 +8,7 @@ const PACKAGE = require('./package.json')
 const config = {
   entry: {
     background: path.resolve(__dirname, 'src/js/background.js'),
-    content: path.resolve(__dirname, 'src/js/content.js'),
+    reactions: path.resolve(__dirname, 'src/js/reactions.js'),
   },
   output: {
     path: path.resolve(__dirname, 'dist'),

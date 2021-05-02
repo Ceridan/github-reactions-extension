@@ -1,6 +1,6 @@
 {
   "name": "github-reaction-extension",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "GitHub Reactions is a Google Chrome extension that allows you to extract reactions from issues to better understand which issues are the most popular",
   "scripts": {
     "build": "webpack --mode production",

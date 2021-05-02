@@ -1,5 +1,5 @@
-import MessageTypes from './message-types'
 import ActionStates from './action-states'
+// import processIssueReactions from './reactions'
 
 let actionEnabled = false
 let currentUrl
@@ -11,6 +11,16 @@ function setActonBadge(enabled) {
   chrome.action.setBadgeBackgroundColor({ color })
 }
 
+function injectIssuesTab(tabId) {
+  chrome.scripting.executeScript(
+    {
+      target: { tabId },
+      files: ['js/reactions.js'],
+      // function: processIssueReactions,
+    },
+  )
+}
+
 chrome.runtime.onInstalled.addListener(() => {
   setActonBadge(actionEnabled)
 })
@@ -18,7 +28,7 @@ chrome.runtime.onInstalled.addListener(() => {
 chrome.webNavigation.onCompleted.addListener(
   (details) => {
     if (!actionEnabled) return
-    chrome.tabs.sendMessage(details.tabId, { type: MessageTypes.ProcessIssues })
+    injectIssuesTab(details.tabId)
   },
   {
     urls: ['https://github.com/*/*/issues'],
@@ -35,7 +45,7 @@ chrome.webNavigation.onHistoryStateUpdated.addListener(
     }
 
     if (!actionEnabled) return
-    chrome.tabs.sendMessage(tabId, { type: MessageTypes.ProcessIssues })
+    injectIssuesTab(tabId)
   },
   {
     urls: ['https://github.com/*/*/issues'],
@@ -47,7 +57,9 @@ chrome.action.onClicked.addListener(
     actionEnabled = !actionEnabled
     setActonBadge(actionEnabled)
 
-    if (!actionEnabled) return
-    chrome.tabs.sendMessage(tab.id, { type: MessageTypes.ProcessIssues, enabled: actionEnabled })
+    const url = new URL(tab.url)
+
+    if (!actionEnabled || url.hostname !== 'github.com') return
+    injectIssuesTab(tab.id)
   },
 )
