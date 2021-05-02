@@ -2,7 +2,13 @@
   "manifest_version": 3,
   "name": "GitHub Reactions",
   "version": "{{PACKAGE_VERSION}}",
-  "description": "Add reactions prefix before issue titles",
+  "description": "GitHub Reactions allows you to extract reactions from issues to better understand which issues are the most popular",
+  "action": {
+    "default_title": "Enabled"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
   "content_scripts": [{
     "matches": [
       "https://github.com/*/*/issues",
@@ -11,9 +17,6 @@
     "js": ["js/content.js"],
     "run_at": "document_end"
   }],
-  "background": {
-    "service_worker": "background.js"
-  },
   "permissions": [
     "activeTab",
     "webNavigation"

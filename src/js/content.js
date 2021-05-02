@@ -52,11 +52,7 @@ function processIssues() {
   })
 }
 
-window.addEventListener('load', () => {
-  processIssues()
-})
-
 chrome.runtime.onMessage.addListener((request) => {
-  if (request.type !== MessageTypes.UrlChanged) return
+  if (request.type !== MessageTypes.ProcessIssues) return
   processIssues()
 })

@@ -1,7 +1,7 @@
 {
   "name": "github-reaction-extension",
-  "version": "0.0.1",
-  "description": "Add reactions prefix before issue titles",
+  "version": "0.0.2",
+  "description": "GitHub Reactions is a Google Chrome extension that allows you to extract reactions from issues to better understand which issues are the most popular",
   "scripts": {
     "build": "webpack --mode production",
     "dev": "webpack --mode development --watch"
