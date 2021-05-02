@@ -46,7 +46,9 @@ function processIssues() {
     cache.getOrRequest(issueUrl)
       .then((reactions) => {
         const agg = aggregateReactions(reactions)
-        issueElement.innerHTML = `[${ReactionElements.thumbUp}: ${agg.thumbUp}, ${ReactionElements.thumbDown}: ${agg.thumbDown}] ${issueElement.innerHTML}`
+        const reactionsHtml = `[${ReactionElements.thumbUp}: ${agg.thumbUp}, ${ReactionElements.thumbDown}: ${agg.thumbDown}]`
+        if (issueElement.innerHTML.startsWith(reactionsHtml)) return
+        issueElement.innerHTML = `${reactionsHtml} ${issueElement.innerHTML}`
       })
       .catch((err) => console.log(`Error occurs in the GitHub Reactions Extension - ${err}`))
   })
