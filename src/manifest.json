@@ -3,9 +3,7 @@
   "name": "GitHub Reactions",
   "version": "{{PACKAGE_VERSION}}",
   "description": "GitHub Reactions allows you to extract reactions from issues to better understand which issues are the most popular",
-  "action": {
-    "default_title": "Enabled"
-  },
+  "action": {},
   "background": {
     "service_worker": "background.js"
   },
