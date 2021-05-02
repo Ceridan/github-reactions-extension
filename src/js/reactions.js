@@ -48,7 +48,7 @@ export default function processIssueReactions() {
         if (issueElement.innerHTML.startsWith(reactionsHtml)) return
         issueElement.innerHTML = `${reactionsHtml} ${issueElement.innerHTML}`
       })
-      .catch((err) => console.log(`Error occurs in the GitHub Reactions Extension - ${err}`))
+      .catch(() => console.log('Rate limits exceeded. More details here: https://docs.github.com/en/rest/overview/resources-in-the-rest-api#rate-limiting'))
   })
 }
 
