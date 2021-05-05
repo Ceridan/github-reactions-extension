@@ -1,5 +1,4 @@
 import ActionStates from './action-states'
-// import processIssueReactions from './reactions'
 
 let actionEnabled = false
 let currentUrl
@@ -16,7 +15,6 @@ function injectIssuesTab(tabId) {
     {
       target: { tabId },
       files: ['js/reactions.js'],
-      // function: processIssueReactions,
     },
   )
 }
