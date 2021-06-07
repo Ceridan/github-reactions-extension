@@ -33,6 +33,7 @@ const config = {
     }),
     new CopyWebpackPlugin({
       patterns: [
+        { from: 'src/img', to: 'img' },
         {
           from: 'src/manifest.json',
           transform: (content) => content.toString().replace('{{PACKAGE_VERSION}}', PACKAGE.version),

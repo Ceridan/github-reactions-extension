@@ -3,6 +3,13 @@
   "name": "GitHub Reactions",
   "version": "{{PACKAGE_VERSION}}",
   "description": "GitHub Reactions allows you to extract reactions from issues to better understand which issues are the most popular",
+  "icons": {
+    "16": "img/icon16.png",
+    "32": "img/icon32.png",
+    "48": "img/icon48.png",
+    "128": "img/icon128.png",
+    "512": "img/icon512.png"
+  },
   "action": {},
   "background": {
     "service_worker": "background.js"
