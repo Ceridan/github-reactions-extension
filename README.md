@@ -1,4 +1,4 @@
-# GitHub Reactions
+# ![logo48](https://user-images.githubusercontent.com/408149/121088826-f7e42500-c7ee-11eb-8914-1808e1822a12.png) GitHub Reactions
 
 GitHub Reactions is a Google Chrome extension that allows you to extract reactions from issues to better understand which issues are the most popular.
 
