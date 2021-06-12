@@ -40,13 +40,15 @@ Instructions for Google Chrome:
 
 If you want to disable the extension, just toggle it out in the `chrome://extensions`.
 
-![image](https://user-images.githubusercontent.com/408149/116781380-2d2c8300-aa8b-11eb-86e6-52da33e2030e.png)
+![image](https://user-images.githubusercontent.com/408149/121789105-c2b74880-cbdb-11eb-9dc3-82c9d0834c49.png)
+
 
 ## How to use GitHub Reactions
 
 First of all, you need to pin the extension right from the address bar at Chrome.
 
-![image](https://user-images.githubusercontent.com/408149/116815657-33902d00-ab67-11eb-8de7-2de026edf234.png)
+![image](https://user-images.githubusercontent.com/408149/121789130-188bf080-cbdc-11eb-8417-10a51b1a3b91.png)
 
 The extension is disabled by default. This is because of the rate limits. Usually you do not want to see reactions all the time.
-To enable the extension just click on the icon. The extension badge text will change: ![image](https://user-images.githubusercontent.com/408149/116815407-1dce3800-ab66-11eb-94c8-4eb71a852577.png). Now you will see reactions in the issues list. To disable the extension click on the icon again: ![image](https://user-images.githubusercontent.com/408149/116815483-6980e180-ab66-11eb-857a-a01602c13f2e.png), reactions prefix will be removed on the next refresh or GitHub navigation action.
+To enable the extension just click on the icon. The extension badge text will change: ![image](https://user-images.githubusercontent.com/408149/121789172-6bfe3e80-cbdc-11eb-9710-9be7f29adebc.png). Now you will see reactions in the issues list. To disable the extension click on the icon again: ![image](https://user-images.githubusercontent.com/408149/121789154-4e30d980-cbdc-11eb-9d12-a0a6a5ac25d3.png)
+, reactions prefix will be removed on the next refresh or GitHub navigation action.
